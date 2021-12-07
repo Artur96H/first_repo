@@ -1,0 +1,42 @@
+Create new directory with the files including (with simple file contents) and play with the directory permissions. Provide the commands list to show how directory permission work. Provide different configurations (r, w, x, rw, rx, wx).
+
+mkdir Desktop/papka
+cd Desktop/papka
+touch file file1 file2
+echo "test1" >> file
+echo "test2" >> file1
+echo "test3" >> file2
+ls -l
+chmod 400 file1
+ls -l
+chmod 100 file2
+ls -l
+chmod 200 file
+ls -l
+cd ..
+chmod 100 papka
+ls -l
+cat papka/file2
+echo "can write" >> papka/file2
+ls -l
+chmod 400 papka
+ls -l
+cat papka/file2
+ls -l
+cd papka/
+chmod 500 papka
+cd papka/
+cat file2
+ls -l
+cat file1
+cd ..
+chmod 200 papka
+ls -l
+echo "can writh" >> papka/file1
+echo "can writh" >> papka/file
+chmod 300 papka
+echo "can writh" >> papka/file
+chmod 700 papka
+cat papka/file
+chmod 700 papka/file
+cat papka/file

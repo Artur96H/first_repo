@@ -1,0 +1,7 @@
+Specify a command to remove every file in a directory with .txt extension.
+artur@Artur:~/Desktop/Papka$ ls
+ashsh  file2.txt  file3  file3.txt  file4  shasj
+artur@Artur:~/Desktop/Papka$ rm -rf ./*.txt
+artur@Artur:~/Desktop/Papka$ ls
+ashsh  file3  file4  shasj
+artur@Artur:~/Desktop/Papka$
